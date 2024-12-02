@@ -232,6 +232,9 @@ body {
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+        url('../images/1.jpg');
     animation: changeBackground 15s infinite;
 }
 
