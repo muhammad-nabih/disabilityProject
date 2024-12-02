@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قصص المثابرة - أصحاب الهمم</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/carioFont.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <style>
+        header {
+            background: linear-gradient(to left, var(--gradient-start), var(--gradient-end));
+            color: var(--text-light);
+            text-align: center;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 20px;
+        }
+
+        .story-card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px var(--card-shadow);
+            transition: transform var(--transition-speed);
+        }
+
+        .story-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .story-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .story-content {
+            padding: 1.5rem;
+        }
+
+        .story-title {
+            color: var(--primary-color);
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .story-description {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .img{
+            min-width: 100px;
+            min-height: 100px;
+            overflow: hidden;
+            border-radius: 100%;
+
+        }
+        .img img{
+            max-width: 100%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .title-img{
+            display: flex;
+            align-items: center;
+
+            background-color: #15905f42;
+            border-radius: 20px;
+            height: 120px;
+            width: 100%;
+            gap: 1rem;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .stories-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="nav-links">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="index.html#types">أنواع الإعاقات</a></li>
+            <li><a href="index.html#support">الدعم والمساعدة</a></li>
+            <li><a href="story.html">قصص ملهمة</a></li>
+            <li><a href="index.html#statistics">إحصائيات</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="animate__animated animate__fadeInDown">ذوو الاحتياجات الخاصة</h1>
+            <p class="hero-subtitle typewriter">معاً نحو مجتمع أكثر شمولاً وتفهماً</p>
+            <a href="#types" class="hero-cta">اكتشف المزيد</a>
+        </div>
+    </section>
+
+    <header>
+        <h1>قصص المثابرة - أصحاب الهمم</h1>
+        <p>إلهام وتحفيز من قصص حقيقية لأشخاص تغلبوا على التحديات</p>
+    </header>
+
+    <main class="container">
+        <div class="stories-grid">
+            <!-- بطاقة أحمد -->
+            <article class="story-card">
+                <div class="story-content">
+                    <div class="title-img">
+                        <div class="img">
+                            <img src="/images/avatar.png" alt="أحمد">
+                        </div>
+                        <h2 class="story-title">أحمد - قصة نجاح في عالم البرمجة</h2>
+                    </div>
+                    <p class="story-description">
+                        رغم إعاقته البصرية، لم يستسلم أحمد (28 عاماً) لتحدياته. بدأ رحلته في تعلم البرمجة باستخدام قارئات الشاشة وتقنيات التكنولوجيا المساعدة عندما كان في السابعة عشر من عمره. اليوم، يعمل كمطور برمجيات رئيسي في إحدى أكبر شركات التكنولوجيا، حيث طور العديد من التطبيقات التي تساعد الأشخاص ذوي الإعاقات البصرية. يقود أحمد أيضاً مبادرة "برمجة بلا حدود" التي علّمت البرمجة لأكثر من 500 شخص من ذوي الإعاقات المختلفة. حصل على جائزة الإبداع التقني لعام 2023 لتطويره تطبيقاً يحول النصوص إلى برايل بشكل فوري.
+                    </p>
+                </div>
+            </article>
+
+            <!-- بطاقة سارة -->
+            <article class="story-card">
+                <div class="story-content">
+                    <div class="title-img">
+                        <div class="img">
+                            <img src="/images/avatar.png" alt="سارة">
+                        </div>
+                        <h2 class="story-title">سارة - بطلة في الرياضة البارالمبية</h2>
+                    </div>
+                    <p class="story-description">
+                        بدأت سارة (32 عاماً) مسيرتها في السباحة البارالمبية بعد حادث في سن الخامسة عشر. رغم الإعاقة الحركية في أطرافها السفلية، حولت التحدي إلى فرصة للتميز. تدربت لمدة 6 ساعات يومياً على مدار 5 سنوات حتى حققت أول ميدالية ذهبية في بطولة العالم للسباحة البارالمبية. اليوم، تمتلك 12 ميدالية دولية، منها 5 ذهبيات أولمبية. أسست أكاديمية "السباحة للجميع" التي تدرب الأطفال والشباب من ذوي الإعاقة، وألهمت المئات للمشاركة في الرياضات المائية. تعمل حالياً كسفيرة للرياضة البارالمبية وتحاضر في المدارس والجامعات عن أهمية الإصرار والعزيمة.
+                    </p>
+                </div>
+            </article>
+
+            <!-- بطاقة محمد -->
+            <article class="story-card">
+                <div class="story-content">
+                    <div class="title-img">
+                        <div class="img">
+                            <img src="/images/avatar.png" alt="محمد">
+                        </div>
+                        <h2 class="story-title">محمد - فنان تشكيلي بلمسات إبداعية</h2>
+                    </div>
+                    <p class="story-description">
+                        فقد محمد (35 عاماً) سمعه في سن الثالثة، لكنه اكتشف موهبته في الرسم مبكراً. درس الفنون الجميلة وتخصص في الفن التعبيري المعاصر. أقام أكثر من 15 معرضاً فردياً حول العالم، وبيعت لوحاته بمئات الآلاف. يتميز أسلوبه الفني باستخدام الألوان الصاخبة والخطوط القوية التي تعبر عن عالمه الصامت. أسس استوديو "ألوان الصمت" الذي يقدم ورش عمل فنية مجانية للأطفال الصم. حصل على وسام الاستحقاق الثقافي من وزارة الثقافة، وتم اختيار أعماله للعرض في متحف الفن المعاصر. يعمل حالياً على مشروع فني ضخم يجمع بين الفن التشكيلي والواقع المعزز لخلق تجربة فنية تفاعلية للجميع.
+                    </p>
+                </div>
+            </article>
+
+            <!-- بطاقة ليلى -->
+            <article class="story-card">
+                <div class="story-content">
+                    <div class="title-img">
+                        <div class="img">
+                            <img src="/images/avatar.png" alt="ليلى">
+                        </div>
+                        <h2 class="story-title">ليلى - كاتبة روايات ملهمة</h2>
+                    </div>
+                    <p class="story-description">
+                        شخصت ليلى (30 عاماً) بالتوحد في سن الرابعة، لكن شغفها بالكتابة ظهر مبكراً. بدأت بكتابة المدونات في سن الخامسة عشر، ونشرت أول رواية لها في سن العشرين. أصبحت روايتها "عالم مختلف" من أكثر الكتب مبيعاً وترجمت إلى 12 لغة. تناقش في كتاباتها تجارب الأشخاص ذوي التوحد وتحدياتهم اليومية بأسلوب أدبي مميز. أسست مبادرة "اكتب لتتواصل" التي تشجع الأشخاص ذوي التوحد على التعبير عن أنفسهم من خلال الكتابة. فازت بجائزة أفضل كاتب شاب لعام 2022، وتعمل حالياً على سلسلة كتب للأطفال تشرح التوحد بطريقة مبسطة وممتعة.
+                    </p>
+                </div>
+            </article>
+
+            <!-- بطاقة عمر -->
+            <article class="story-card">
+                <div class="story-content">
+                    <div class="title-img">
+                        <div class="img">
+                            <img src="/images/avatar.png" alt="عمر">
+                        </div>
+                        <h2 class="story-title">عمر - رائد أعمال في مجال التكنولوجيا المساعدة</h2>
+                    </div>
+                    <p class="story-description">
+                        ولد عمر (40 عاماً) مع الشلل الدماغي، لكنه استطاع تحويل تحدياته إلى فرص. درس هندسة الحاسوب وحصل على ماجستير في الذكاء الاصطناعي. أسس شركة "تقنيات المستقبل" التي تطور أجهزة وبرمجيات مبتكرة لمساعدة ذوي الإعاقة. نجح في جمع تمويل يتجاوز 10 ملايين دولار لمشاريعه، وطور كرسياً متحركاً ذكياً يعمل بالأوامر الصوتية والإشارات العصبية. وظف في شركته أكثر من 50 شخصاً من ذوي الإعاقة، وقدم منتجاته بأسعار مخفضة للعائلات محدودة الدخل. حصل على براءات اختراع عديدة وجوائز في مجال الابتكار التكنولوجي.
+                    </p>
+                </div>
+            </article>
+
+            <article class="story-card">
+
+                <div class="story-content">
+                    <div class="title-img">
+<div class="img">
+    <img src="/images/avatar.png" alt="">
+</div>
+                        <h2 class="story-title">كريم - لاعب كرة قدم محترف للمكفوفين</h2>
+                    </div>
+
+                    <p class="story-description">
+                        فقد كريم (27 عاماً) بصره في سن العاشرة، لكن شغفه بكرة القدم لم يتوقف. تدرب بجد حتى أصبح كابتن المنتخب الوطني لكرة القدم للمكفوفين. قاد الفريق للفوز ببطولة العالم مرتين، وسجل أكثر من 100 هدف في مسيرته الدولية. يدير الآن أكاديمية رياضية تدرب الأطفال المكفوفين على كرة القدم وغيرها من الرياضات. طور تقنيات تدريب مبتكرة تعتمد على الصوت واللمس، وألهم العديد من الشباب للانضمام إلى الرياضات البارالمبية. يعمل كمعلق رياضي ومتحدث تحفيزي في المناسبات الرياضية والشبابية.
+                    </p>
+                </div>
+            </article>
+
+
+
+
+
+
+    <script src="scripts/aos.js"></script>
+    <script src="scripts/typewriter.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Typewriter effect
+        new Typewriter('.typewriter', {
+            strings: ['معاً نحو مجتمع أكثر شمولاً وتفهماً'],
+            autoStart: true,
+            loop: true,
+            delay: 75
+        });
+    </script>
+    </body>
+</html>
